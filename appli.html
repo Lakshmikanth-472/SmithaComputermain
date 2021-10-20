@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+          body{
+            background-image: url("compi.jpg");
+            background-repeat: no-repeat;
+            background-size: 120%;
+        }
+        .form {
+        
+        padding: 0px 10px;
+        background-color: rgb(62, 122, 133);
+        border: 2px solid red;
+        margin: 34px 500px;
+    }
+    .form div {
+        padding: 10px 10px;
+    }
+    .form h3,h1{
+        color:rgb(81, 29, 150);
+    }
+    #button {
+        background-color: orange;
+        padding: 10px 20px;
+        border: 1px solid white;
+        font-size: 15px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<form class="form">
+    <h1 style="text-align: center;">SMITHA COMPUTER EDUCATION CENTER,KAIKAMBA</h1>
+    <div><label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+    </div>
+    <div><label for="Fname">Fathers Name:</label>
+        <input type="text" id="Fname" name="Fname"><br>
+    </div>
+    <div><label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+    </div>
+    <h3>Address</h3>
+    <div><textarea name="address" rows="5" cols="40"></textarea></div>
+     </div>
+    <div><label for="email">E-mail id:</label>
+        <input type="email" id="email" name="email"><br>
+    </div>
+    <div><label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+    </div>
+    <div><label for="contact">Contact#:</label>
+        <input type="text" id="contact" name="contact"><br>
+    </div>
+    <h3>Educational Qualification</h3>
+    <div><label for="degree">Degree:</label>
+        <select id="degree" name="degree">
+            <option value="select">--Select Group--</option>
+            <option value="ba">B.A</option>
+            <option value="bsc">B.sc</option>
+            <option value="be">B.E</option>
+            <option value="sslc">S.S.L.C</option>
+            <option value="puc">P.U.C</option>
+            <option value="none">NONE</option>
+        </select>
+    </div>
+    <h3>Course Details</h3>
+    <div><label for="course">Course Selected:</label>
+        <select id="course" name="course">
+            <option value="select">--Select course--</option>
+            <option value="dca">D.C.A</option>
+            <option value="pgdca">P.G.D.C.A</option>
+            <option value="doa">D.O.A</option>
+            <option value="cit">C.I.T</option>
+            <option value="dit">D.I.T</option>
+            <option value="basics">Basics</option>
+            <option value="tally">Tally(+GST)</option>
+            <option value="pl">Pragramming Languages</option>
+        </select>
+    </div>
+    <div><label for="time">Timings:-</label>
+        <input type="time" id="time" name="time"><br>
+    </div>
+    <div><label for="resume">Attach Documents:</label>
+        <input type="file" id="myFile" name="Choose File">
+    </div>
+    <div><button type="submit" id="button" onclick="myfunction()">SUBMIT &#x21A0</button></div>
+    <script>
+        function myfunction()
+        {
+        confirm("No Further changes allowed.Are you sure you want to continue?");
+        }
+    </script>
+</form>
+</body>
+
+</html>
